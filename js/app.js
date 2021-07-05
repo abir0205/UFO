@@ -48,13 +48,8 @@ function handleClick() {
     // rows where the `datetime` value matches the filter value
     filteredData = filteredData.filter(row => row.datetime === date);
   };
+  // Attach an event to listen for the form button
+  d3.selectAll("#filter-btn").on("click", handleClick);
 
-d3.selectAll("#filter-btn").on("click", handleClick);
-
-buildTable(tableData);
-
-   // Rebuild the table using the filtered data
-  // @NOTE: If no date was entered, then filteredData will
-  // just be the original tableData.
-  buildTable(filteredData);
-};
+  // Build the table when the page loads
+  buildTable(tableData);
