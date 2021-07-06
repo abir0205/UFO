@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="static/css/style.css">
   </head>
 
-  <body>
+  <body class="bg-dark">
     <div class="wrapper">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <a class="navbar-brand" href="index.html">UFO Sightings</a>
       </nav>
     <div class="jumbotron">
-      <h1>The Truth Is Out There</h1>
+      <h1 class="display-4">The Truth is Out There</h1>
     </div>
     <div class="container-fluid">
       <div class="row">
@@ -37,22 +37,49 @@
       <div class="container-fluid">
         <div class = "row">
           <div class="col-md-3">
-            <form>
+            <form class="bg-dark">
               <p>Filter Search</p>
             </form>
-            <ul class="list-group">
+            <ul class="list-group bg-dark">
 
             </ul>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark">
 
             </li>
-            <li class="list-group-item">
+            <!-- search by date -->
+            <li class="list-group-item bg-dark">
               <label for="date">Enter Date</label>
-              <input type="text" placeholder="1/10/2010" id="datetime" />
-              <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-
+              <input type="text" placeholder="1/10/2010" id="datetime">
+              <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
             </li>
+            <!-- search by city -->
+            <li class="list-group-item bg-dark">
+              <label for="city">Enter City</label><br>
+              <input type="text" placeholder="new paltz" id="city" />
+              <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+            </li>
+
+            <li class="list-group-item bg-dark">
+              <label for="state">Enter State</label><br>
+              <input type="text" placeholder="ny" id="state" />
+              <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+            </li>
+
+            <!-- search by country -->
+            <li class="list-group-item bg-dark">
+              <label for="city">Enter Country</label><br>
+              <input type="text" placeholder="us" id="country" />
+              <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+            </li>
+
+            <!-- search by UFO shape -->
+            <li class="list-group-item bg-dark">
+              <label for="shape">Enter Shape</label><br>
+              <input type="text" placeholder="circle" id="shape" />
+              <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+            </li>
+
           </div>
         <div class="col-md-9">
           <table class="table table-striped">
